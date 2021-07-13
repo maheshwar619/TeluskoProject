@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+Maheshwar Rapolu
+<table border='4px'>
+    <thead>
+    <th>name</th>
+    <th>address</th>
+    <th>gender</th>
+    <th>country</th>
+    <th>email</th>
+    <th>id</th>
+
+    </thead>
+{% for i in Vaccine %}
+    <tr>
+         <td>{{i.name}}</td>
+        <td>{{i.address}}</td>
+        <td>{{i.country}}</td>
+        <td>{{i.gender}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.id}}</td>
+
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>
